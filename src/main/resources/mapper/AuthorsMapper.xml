@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.panther.bigDataExport.AuthorsMapper">
+
+    <select id="selectByExample" resultType="com.panther.bigDataExport.Authors">
+        select *
+        from authors
+    </select>
+
+
+    <select id="streamByExample" fetchSize="-2147483648"
+            resultType="com.panther.bigDataExport.Authors">
+        select *
+        from authors
+    </select>
+
+
+</mapper>
