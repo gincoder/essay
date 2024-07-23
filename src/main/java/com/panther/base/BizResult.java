@@ -35,7 +35,7 @@ public class BizResult<T> implements Serializable {
     /**
      * 错误返回
      */
-    private static <T> BizResult<T> error(Integer code, String msg) {
+    public static <T> BizResult<T> error(Integer code, String msg) {
         return BizResult.<T>of().setSuccess(false).setCode(code).setMsg(msg);
     }
 
